@@ -31,7 +31,7 @@ const TodoItem = ({index,id,text,completed,todos,setTodos}) => {
                     </div>
                     <p className={`${completed ? "line-through" : ""} ${completed ? "dark:text-dark-darkGrayishBlue" : "dark:text-dark-lightGrayishBlue"} ${completed ? "text-light-lightGrayishBlue" : "text-light-darkGrayishBlue"} break-all`}>{text}</p>
                 </div>
-                <img onClick={() => deleteTodo()} className="w-[14px] sm:w-[18px] h-[14px] sm:h-[18px] sm:hidden sm:group-hover:block cursor-pointer" src={cross} alt="delete" />
+                <img onClick={() => deleteTodo()} className="ml-4 w-[14px] sm:w-[18px] h-[14px] sm:h-[18px] sm:invisible sm:group-hover:visible cursor-pointer" src={cross} alt="delete" />
             </div>
         )}
    </Draggable>
